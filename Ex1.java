@@ -13,7 +13,7 @@ class Ex1_2 extends Ex {
 		System.out.println("伊\n佐\n真\n之\n介");
 	}
 }
-class Ex1_333 extends Ex {
+class Ex1_3 extends Ex {
 	void execute(){
 		System.out.println("伊\n佐\n \n真\n之\n介");
 	}
