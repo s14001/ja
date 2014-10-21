@@ -20,7 +20,6 @@ class Ex2_0 extends Ex{
     }
 }
 
-<<<<<<< HEAD
 class Ex2_1 extends Ex{
     void execute(){
         double x;
@@ -60,8 +59,7 @@ public class Ex2 {
         a.execute();
         a = new Ex2_2();
         a.execute();
-    }
-=======
+    }}
 class Ex2_00 extends Ex{
 	void execute(){
 		Scanner stdIn = new Scanner(System.in);
@@ -70,7 +68,7 @@ class Ex2_00 extends Ex{
 
 		System.out.print("xの値：");		// xの値の入力を促す
 		int x = stdIn.nextInt();
-		
+
 		System.out.print("yの値：");		// yの値の入力を促す
 		int y = stdIn.nextInt();
 
@@ -92,15 +90,4 @@ class Ex2_000 extends Ex{
 	}
 }
 
-public class Ex2 {
-	public static void main(String[] args){
-		Ex a;
-/*
-		a = new Ex2_0();
-		a = new Ex2_00();
-*/
-		a = new Ex2_000();
-		a.execute();
-	}
->>>>>>> 787164609cb6ea6bdd9cef349a592f7d73a7d607
-}
+
