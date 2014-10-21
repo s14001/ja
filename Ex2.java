@@ -50,6 +50,63 @@ class Ex2_2 extends Ex{
         System.out.println("平均は" + (x + y + z) / 3 + "です。");
     }
 }
+class Ex2_3 extends Ex{
+	void execute(){
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.println("入力した値をそのまま表示します。");
+
+		System.out.print("入力値:"); //xの値の入力を促す
+		int x = stdIn.nextInt();
+		System.out.println("入力値 は " + (x )); // x + yの値を表示
+	}
+}
+class Ex2_4 extends Ex{
+    void execute(){
+    	Scanner stdIn = new Scanner(System.in);
+
+		System.out.println("入力した値から10を加減します。");
+
+		System.out.print("入力値：");		// xの値の入力を促す
+		int x = stdIn.nextInt();
+
+
+		System.out.println("x + x = " + (x + 10)); // x + yの値を表示
+		System.out.println("x - x = " + (x - 10)); // x - yの値を表示
+
+    }
+}
+
+class Ex2_5 extends Ex{
+	void execute(){
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.println("xとyをの平均をだします。");
+
+		System.out.print("xの値：");		// xの値の入力を促す
+        double x = stdIn.nextDouble();
+
+		System.out.print("yの値：");		// yの値の入力を促す
+		double y = stdIn.nextDouble();
+
+		System.out.println("x + y の平均は " + ((x + y)/2)); // x + yの値を表示
+	}
+}
+class Ex2_6 extends Ex{
+	void execute(){
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.println("三角形の面積を出します");
+
+		System.out.print("底辺：");		// xの値の入力を促す
+        double x = stdIn.nextDouble();
+
+		System.out.print("高さ：");		// yの値の入力を促す
+		double y = stdIn.nextDouble();
+
+		System.out.println("面積は  " + ((x*y)/2)); // x + yの値を表示
+	}
+}
 public class Ex2 {
     public static void main(String[] args){
         Ex a;
@@ -59,6 +116,17 @@ public class Ex2 {
         a.execute();
         a = new Ex2_2();
         a.execute();
+        a = new Ex2_3();
+        a.execute();
+        a = new Ex2_4();
+        a.execute();
+        a = new Ex2_5();
+        a.execute();
+        a = new Ex2_6();
+        a.execute();
+        a = new Ex2_00();
+        a.execute();
+
     }}
 class Ex2_00 extends Ex{
 	void execute(){
