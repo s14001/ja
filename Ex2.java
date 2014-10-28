@@ -170,10 +170,9 @@ class Ex2_7 extends Ex{
 	void execute(){
 		Random rand = new Random();
 
-		int luchy = rand.nextInt(8)+1;		// 0～9の乱数
-         int ln = rand.nextInt(8)+1*-1
-             ;		// 0～9の乱数
-        int  luc= rand.nextInt(10)+90;		// 0～9の乱数
+		int luchy = rand.nextInt(9)+1;		// 0～9の乱数
+         int ln = rand.nextInt(9)-9 ;		// 0～9の乱数
+        int  luc= rand.nextInt(90)+10;		// 0～9の乱数
 		System.out.println("ナンバーは" + luchy + "です。");
         System.out.println("ナンバーは"+ln+"です。");
         System.out.println("ナンバーは" + luc + "です。");
