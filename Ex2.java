@@ -126,6 +126,14 @@ public class Ex2 {
         a.execute();
         a = new Ex2_00();
         a.execute();
+        a = new Ex2_7();
+        a.execute();
+        a = new Ex2_8();
+        a.execute();
+        a = new Ex2_9();
+        a.execute();
+       a = new Ex2_10();
+        a.execute();
 
     }}
 class Ex2_00 extends Ex{
@@ -152,10 +160,70 @@ class Ex2_000 extends Ex{
 	void execute(){
 		Random rand = new Random();
 
-		int luchy = rand.nextInt(10);		// 0～9の乱数
+		int luchy = rand.nextInt(8)+1;		// 0～9の乱数
 
 		System.out.println("今日のラッキーナンバーは" + luchy + "です。");
 	}
+}
+
+class Ex2_7 extends Ex{
+	void execute(){
+		Random rand = new Random();
+
+		int luchy = rand.nextInt(8)+1;		// 0～9の乱数
+         int ln = rand.nextInt(8)+1*-1
+             ;		// 0～9の乱数
+        int  luc= rand.nextInt(10)+90;		// 0～9の乱数
+		System.out.println("ナンバーは" + luchy + "です。");
+        System.out.println("ナンバーは"+ln+"です。");
+        System.out.println("ナンバーは" + luc + "です。");
+
+    }
+
+}
+
+class Ex2_8 extends Ex{
+	void execute(){
+        Scanner stdIn = new Scanner(System.in);
+		Random rand = new Random();
+		System.out.print("数値：");		// xの値の入力を促す
+        int x = stdIn.nextInt();
+        int  lucy=rand.nextInt(11)-5;
+         int result=lucy+x;
+         System.out.println("数値の±５の乱数は" + result + "です。");
+
+
+
+	}
+}
+
+
+
+class Ex2_9 extends Ex{
+	void execute(){
+		Random rand = new Random();
+
+   double luchy = rand.nextDouble();		// 0～9の乱数
+   double b     =rand.nextDouble()*10;
+   double c     =rand.nextDouble()*2-1;
+   System.out.println("実数値は" + luchy + "です。");
+ System.out.println("実数値は" + b + "です。");
+ System.out.println("実数値は" + c + "です。");
+
+    }
+}
+
+class Ex2_10 extends Ex{
+	void execute(){
+        Scanner stdIn =new Scanner(System.in);
+        System.out.print("姓:");
+        String s1=stdIn.next();
+        System.out.print("名:");
+        String s2=stdIn.next();
+ System.out.println("こんにちは" + s1 +s2+ "さん。");
+
+
+    }
 }
 
 
