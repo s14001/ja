@@ -82,5 +82,18 @@ if(a>79&&a<101){
       return "範囲(0～100)外の値です";
     }
     }
+
+
+	public double ex3_8(double a, double b){
+		return -1.0;
+	}
+
+	public int ex3_9(int a, int b){
+		return 0;
+	}
+
+	public String ex3_10(int a, int b){
+		return "dummy";
+	}
 }
 
