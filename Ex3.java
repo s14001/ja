@@ -32,13 +32,14 @@ if(n>0){
 }
 
 public String ex3_4(int a){
-     if(a%5==0){
+     if(a%5==0&&a>0){
      return "その値は5で割り切れます";
       }else if((a%5>0)){
           return "その値は5で割り切れません";
-       }else{
-          return"正でない整数値です";
+   }else{
+   return "正でない整数値です";
    }
+
 }
 
 
@@ -85,15 +86,22 @@ if(a>79&&a<101){
 
 
 	public double ex3_8(double a, double b){
-		return -1.0;
-	}
+		 if(a>b){
+        return a;}else{
+        return b;
+        }
+    }
 
 	public int ex3_9(int a, int b){
-		return 0;
+		return Math.abs(a-b);
 	}
 
 	public String ex3_10(int a, int b){
-		return "dummy";
+		if(Math.abs(a-b)<10+1){
+        return "それらの差は10以下です";
+            }else{
+        return "それらの差は11以上です";
+        }
 	}
 }
 
