@@ -1,7 +1,9 @@
+import java.util.Scanner;
 class Ex3{
+   public String ex3_0(int n){
 
-	public String ex3_0(int n){
-if(n>0){
+
+    if(n>0){
 	return "その値は正です";
 }else{ return "その値は０か負です";
     }
