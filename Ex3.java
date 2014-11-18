@@ -107,15 +107,36 @@ if(a>79&&a<101){
 	}
 
 	public int ex3_11(int a, int b, int c){
-		return 1000;
-	}
+		if (a<b){
+          return a;
+        }else if(c<a){
+          return c;
+        }else{
+          return b;
+	    }
+    }
 
 	public int ex3_12(int a, int b, int c){
-		return 1000;
+		if(a==b||a==c){
+            return b;
+        }else if(a<b&&b<c|| a>b&&b>c){
+          return b;
+        }else{
+          return  a;}
 	}
 
 	public String ex3_13(int a){
-		return "dummy";
-	}
-}
+		if(a>3-1 && a<5+1){
+            return "春";
+	  }else if(a>5-1 && a<8+1){
+            return "夏";
+      }else if(a>9-1 &&  a<11+1){
+          return "秋";
+      }else if((0<a && a<2+1)||12-1<a && a<12+1){
+            return  "冬";
+      }else{
+            return  "範囲(1～12)外の値です" ;
+      }
 
+  }
+}
