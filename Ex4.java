@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class Ex4{
 
 	public int [] ex4_1(int [] a){
@@ -75,5 +77,38 @@ public int [] ex4_2(int [] a){
         }
         return sum;
   }
+
+
+
+
+	public int [] ex4_6(int a){
+
+		int [] ret = new int[1];
+
+		return ret;
+
+	}
+
+	public boolean ex4_7(int a){
+
+		return false;
+
+	}
+
+	public int ex4_8(int [] a){
+
+		int ret = 0;
+
+		return ret;
+
+	}
+
+	public int ex4_9(int [] a){
+
+		int ret = 0;
+
+		return ret;
+
+	}
 }
 

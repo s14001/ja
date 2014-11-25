@@ -204,6 +204,166 @@ public class Ex4Test {
 		int actual = ex4.ex4_5(test);
 		assertThat(actual, is(expected));
 	}
+	@Test
+	public void ex4_6_1(){
+		Ex4 ex4 = new Ex4();
+		int [] expected = {1, 2, 4};
+		int test =4;
+		int [] actual = ex4.ex4_6(test);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex4_6_2(){
+		Ex4 ex4 = new Ex4();
+		int [] expected = {1, 2, 4, 5, 10, 20, 25, 50, 100};
+		int test =100;
+		int [] actual = ex4.ex4_6(test);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex4_6_3(){
+		Ex4 ex4 = new Ex4();
+		int [] expected = {1, 2, 3, 6, 11, 22, 33, 66};
+		int test =66;
+		int [] actual = ex4.ex4_6(test);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex4_6_4(){
+		Ex4 ex4 = new Ex4();
+		int [] expected = {1};
+		int test =1;
+		int [] actual = ex4.ex4_6(test);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex4_6_5(){
+		Ex4 ex4 = new Ex4();
+		int [] expected = {1, 9999991};
+		int test =9999991;
+		int [] actual = ex4.ex4_6(test);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex4_7_1(){
+		Ex4 ex4 = new Ex4();
+		boolean expected = false;
+		int test = 1;
+		boolean actual = ex4.ex4_7(test);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex4_7_2(){
+		Ex4 ex4 = new Ex4();
+		boolean expected = true;
+		int test = 2;
+		boolean actual = ex4.ex4_7(test);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex4_7_3(){
+		Ex4 ex4 = new Ex4();
+		boolean expected = true;
+		int test = 9999973;
+		boolean actual = ex4.ex4_7(test);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex4_7_4(){
+		Ex4 ex4 = new Ex4();
+		boolean expected = true;
+		int test = 9999991;
+		boolean actual = ex4.ex4_7(test);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex4_7_5(){
+		Ex4 ex4 = new Ex4();
+		boolean expected = false;
+		int test = 9999999;
+		boolean actual = ex4.ex4_7(test);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex4_8_1(){
+		Ex4 ex4 = new Ex4();
+		int expected = 6000;
+		int [] test = {1000, 2000, 3000};
+		int actual = ex4.ex4_8(test);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex4_8_2(){
+		Ex4 ex4 = new Ex4();
+		int expected = 55;
+		int [] test = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		int actual = ex4.ex4_8(test);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex4_8_3(){
+		Ex4 ex4 = new Ex4();
+		int expected = 0;
+		int [] test = {-3, -2, -1, 0, 1, 2, 3};
+		int actual = ex4.ex4_8(test);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex4_8_4(){
+		Ex4 ex4 = new Ex4();
+		int expected = 1;
+		int [] test = {1};
+		int actual = ex4.ex4_8(test);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex4_8_5(){
+		Ex4 ex4 = new Ex4();
+		int expected = -55;
+		int [] test = {-1, -2, -3, -4, -5, -6, -7, -8, -9, -10};
+		int actual = ex4.ex4_8(test);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex4_9_1(){
+		Ex4 ex4 = new Ex4();
+		int expected = 6;
+		int [] test = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		int actual = ex4.ex4_9(test);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex4_9_2(){
+		Ex4 ex4 = new Ex4();
+		int expected = 2003;
+		int [] test = {1001, 2002, 3007};
+		int actual = ex4.ex4_9(test);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex4_9_3(){
+		Ex4 ex4 = new Ex4();
+		int expected = 1;
+		int [] test = {-3, -2 , -1, 0, 2, 4, 6};
+		int actual = ex4.ex4_9(test);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex4_9_4(){
+		Ex4 ex4 = new Ex4();
+		int expected = 0;
+		int [] test = {0, 1, -2};
+		int actual = ex4.ex4_9(test);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex4_9_5(){
+		Ex4 ex4 = new Ex4();
+		int expected = -5;
+		int [] test = {-1, -2, -3, -4, -5, -6, -7, -8, -9, -10};
+		int actual = ex4.ex4_9(test);
+		assertThat(actual, is(expected));
+	}
 
 	// エントリーポイント
 	public static void main(String[] args){
