@@ -83,21 +83,44 @@ public int [] ex4_2(int [] a){
 
 	public int [] ex4_6(int a){
 
-		int [] ret = new int[1];
+   int temp=0;
+   int count=0;
+for(int b=0;b<a;b++){
 
-		return ret;
+    if((a%(b+1))==0){
+          temp+=1;
+   }
+  }
+   int [] ret= new int[temp];
+for(int c=0;c<a;c++){
+  if(a%(c+1)==0){
+      ret[count]=c+1;
+       count+=1;
+    }
+  }
+return ret;
 
 	}
 
 	public boolean ex4_7(int a){
-
-		return false;
-
-	}
-
+    int count=0;
+     for(int c=2;c<a;c++){
+     if(a%c==0){
+      count+=1;
+    }
+ }
+if(count>0||a==1){
+     return false;}else{
+     return true;
+   }
+}
 	public int ex4_8(int [] a){
 
-		int ret = 0;
+    int ret = 0;
+for(int i=0;i<a.length;i++){
+      ret+=a[i];
+
+}
 
 		return ret;
 
@@ -105,10 +128,16 @@ public int [] ex4_2(int [] a){
 
 	public int ex4_9(int [] a){
 
-		int ret = 0;
+		double ret = 0.0d;
 
-		return ret;
+        for(int i=0;i<a.length;i++){
+         ret+=a[i];
+              }
 
+    double cal=Math.round(ret/(a.length));
+   int b =  (int)cal;
+
+		return  b;
 	}
 }
 
